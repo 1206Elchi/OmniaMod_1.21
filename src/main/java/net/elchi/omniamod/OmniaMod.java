@@ -1,5 +1,7 @@
 package net.elchi.omniamod;
 
+import net.elchi.omniamod.block.ModBlocks;
+import net.elchi.omniamod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class OmniaMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
