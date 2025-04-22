@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "omniamod",
+	"version": "${version}",
+	"name": "Omnia Mod",
+	"description": "Omnia is Latin for everything, so this mod is going to implement everything you could need in your Minecraft World!",
+	"authors": [
+		"Elchi"
+	],
+	"contact": {
+		"Discord": "elchi_sam"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/omniamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.elchi.omniamod.OmniaMod"
+		],
+		"fabric-datagen": [
+			"net.elchi.omniamod.OmniaModDataGenerator"
+		],
+		"client": [
+			"net.elchi.omniamod.OmniaModClient"
+		]
+	},
+	"mixins": [
+		"omniamod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
